@@ -1,0 +1,398 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300&subset=greek,latin);
+
+body {
+  margin: 0;
+  /* font: 1em/1.5 sans-serif; */
+  background-color: #E9EAED;
+
+  font-size: 14px;
+  font-family: 'Open Sans';
+}
+
+div.box_container {
+  border: 1px solid;
+  border-radius: 5px;
+}
+
+.go_home {
+  background: url(../images/home-icon.png);
+  cursor:pointer;
+  width: 33px;
+  height: 31px;
+  border: none;
+  display: block;
+}
+
+.info_textarea{
+  max-width: 100%; 
+  min-height: 100px;  
+}
+
+#share-buttons img {
+  width: 35px;
+  padding: 5px;
+  border: 0;
+  box-shadow: 0;
+  display: inline;
+  float: right;
+}
+
+.deletebut, .deletecat{
+
+  /* background: transparent url(../images/del.ico) no-repeat center top;*/
+  /* padding-<left|right>: <width of image>px; */
+    background: url(../images/del.ico) no-repeat center;
+    cursor:pointer;
+    width: 30px;
+    height: 30px;
+    border: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Statistics */
+
+#statistics_title {
+  color: #7092BE;
+  font-size: 3em;
+}
+
+#total_tickets, #open_tickets, #closed_tickets {
+  color: #7092BE;
+  font-size: 2.5em;
+  font-weight: 500;
+  line-height: 1;
+  display: block;
+  padding-top: 5px;
+}
+
+#avg_ticket_time {
+  color: #7092BE;
+  font-size: 2em;
+  font-weight: 500;
+  line-height: 1;
+  display: block;
+  padding-top: 5px;
+}
+
+#total_tickets_image, #open_tickets_image, #resolved_tickets_image, #average_time_image {
+  width: 84px;
+  height: 100px;
+  border: none;
+}
+
+#total_tickets_image {
+  background: url(../images/statistics/total.png) no-repeat center;
+}
+
+#open_tickets_image {
+  background: url(../images/statistics/open.png) no-repeat center;
+}
+
+#resolved_tickets_image {
+  background: url(../images/statistics/closed.png) no-repeat center;
+}
+
+#average_time_image {
+  background: url(../images/statistics/clock.png) no-repeat center;
+  font-size: 51em;
+}
+
+
+
+p.statistics_title {
+  font-size: 20px;
+  text-align: center;
+  margin-top: -10px;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  z-index: 99;
+}
+#map, #map-canvas { 
+  width: 100%;
+  height: 800px;
+  left:1px;
+  top:1px;
+  right:1px;
+  bottom:1px;
+}
+
+#map {
+  position: absolute;
+}
+
+p.error {
+  color:rgb(255,0,0);
+}
+
+p.success {
+  color:rgb(0,0,255);
+}
+
+p.admin_info_message {
+    float: left;
+    color: #5669D6;
+}
+
+
+table, td, th {
+  border:1px solid gray;
+}
+
+th {
+  background-color:gray;
+  color:white;
+}
+
+.edit_icon {
+  background-image: url('../images/edit_icon1.png');
+  width: 20px;
+  height: 20px;
+  float: left;
+  display: block;  
+  margin-right: 8px;
+}
+
+
+.login_table, .login_table tr, .login_table th, .login_table td { 
+  border: none;
+  border-collapse: collapse; 
+}
+
+.info_window_table, .info_window_table tr, .info_window_table th, .info_window_table td { 
+  border: none;
+  border-collapse: collapse; 
+}
+
+.display_info_table, .display_info_table tr, .display_info_table th, .display_info_table td { 
+  border: none;
+  border-collapse: collapse; 
+  font-size: 14px;
+  font-weight: normal;
+}
+
+
+
+
+ul.user_options {
+  list-style-image:url('../images/sqpurple.gif');
+}
+
+ul.user_stats {
+  list-style-image:url('../images/info_icon.png');
+}
+
+.strip {
+  background: #891434;
+  color: #fff;
+  padding: 1em 5%; }
+  .strip p {
+    text-align: left;
+    font-size: 1.2em; }
+
+.container {
+  width: 90%;
+  margin: 2em auto; 
+  }
+
+p {
+  text-align: justify;
+  margin: 0 0 1.5em 0; 
+}
+
+a {
+  color: black; 
+}
+
+a:link {
+  text-decoration:none;
+}   
+
+a:visited {
+  text-decoration:none;
+} 
+
+a:hover {
+  text-decoration:underline;
+  color: #7092BE;
+}  
+
+a:active {
+  text-decoration:underline;
+}
+
+h2 {
+  margin-top: 0; 
+}
+/*
+img {
+  display: block;
+  max-width: 100%; }
+*/
+/* -- Begin grids
+------------------------------------------------------------- */
+/* -- Use this wrapper if you want to divide your columns -- */
+.divide-bottom {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 1.5em;
+  margin-bottom: 1.5em; }
+
+/* -- Use this wrapper if you want to block-out a column with padding 
+Taken from http://csswizardry.com/2011/10/the-island-object/) -- */
+.island {
+  padding: 1.5em;
+  /* background-color: #ececec; */
+  background-color: #DCE1E9;
+}
+  .island :last-child {
+    margin-bottom: 0; }
+
+/* -- Setup grids with base class -- */
+.grid-wrap {
+  margin-left: -3em;
+  overflow: hidden;
+  clear: both; }
+
+.grid-col {
+  float: left;
+  padding-left: 3em;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.large-gutter {
+  margin-left: -6em; }
+  .large-gutter .grid-col {
+    padding-left: 6em; }
+
+.half-gutter {
+  margin-left: -1.5em; }
+  .half-gutter .grid-col {
+    padding-left: 1.5em; }
+
+.no-gutter {
+  margin-left: 0; }
+  .no-gutter .grid-col {
+    padding-left: 0; }
+
+.reset-gutter {
+  margin-left: -3em; }
+  .reset-gutter .grid-col {
+    padding-left: 3em; }
+
+ul.grid-wrap,
+ol.grid-wrap {
+  padding-left: 0;
+  list-style: none; }
+
+li.grid-col {
+  margin-left: 0;
+  margin-bottom: 0; }
+
+.col-full,
+.col-set-full .grid-col {
+  width: 100%; }
+
+.col-one-half,
+.col-set-one-half .grid-col {
+  width: 50%; }
+
+.col-one-third,
+.col-set-one-third .grid-col {
+  width: 33.333%; }
+
+.col-one-quarter,
+.col-set-one-quarter .grid-col {
+  width: 25%; }
+
+.col-two-thirds {
+  width: 66.666%; }
+
+.col-three-quarters {
+  width: 75%; }
+
+/* -- Breakpoint (.bp1)
+------------------------------------------------------------- */
+/* 480 pixels -> SMARTPHONES */
+@media only screen and (min-width: 30em) {
+  .bp1-col-full,
+  .bp1-col-set-full .grid-col {
+    width: 100%; }
+
+  .bp1-col-one-half,
+  .bp1-col-set-one-half .grid-col {
+    width: 50%; }
+
+  .bp1-col-one-third,
+  .bp1-col-set-one-third .grid-col {
+    width: 33.333%; }
+
+  .bp1-col-one-quarter,
+  .bp1-col-set-one-quarter .grid-col {
+    width: 25%; }
+
+  .bp1-col-two-thirds {
+    width: 66.666%; }
+
+  .bp1-col-three-quarters {
+    width: 75%; } 
+}
+/* -- Breakpoint 2 (.bp2)
+------------------------------------------------------------- */
+/* 768 pixels -> TABLET + PC */
+@media only screen and (min-width: 48em) {
+  .bp2-col-full,
+  .bp2-col-set-full .grid-col {
+    width: 100%; }
+
+  .bp2-col-one-half,
+  .bp2-col-set-one-half .grid-col {
+    width: 50%; }
+
+  .bp2-col-one-third,
+  .bp2-col-set-one-third .grid-col {
+    width: 33.333%; }
+
+  .bp2-col-one-quarter,
+  .bp2-col-set-one-quarter .grid-col {
+    width: 25%; }
+
+  .bp2-col-two-thirds {
+    width: 66.666%; }
+
+  .bp2-col-three-quarters {
+    width: 75%; } 
+}
+/* -- Breakpoint 3 (.bp3)
+------------------------------------------------------------- */
+/* 1200 pixels -> TABLET + PC */
+@media only screen and (min-width: 75em) {
+  .bp3-col-full,
+  .bp3-col-set-full .grid-col {
+    width: 100%; }
+
+  .bp3-col-one-half,
+  .bp3-col-set-one-half .grid-col {
+    width: 50%; }
+
+  .bp3-col-one-third,
+  .bp3-col-set-one-third .grid-col {
+    width: 33.333%; }
+
+  .bp3-col-one-quarter,
+  .bp3-col-set-one-quarter .grid-col {
+    width: 25%; }
+
+  .bp3-col-two-thirds {
+    width: 66.666%; }
+
+  .bp3-col-three-quarters {
+    width: 75%; } 
+}
